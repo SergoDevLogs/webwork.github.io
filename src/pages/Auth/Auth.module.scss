@@ -1,0 +1,30 @@
+.wrap__auth{
+  background: var(--gray);
+  margin: 0 auto;
+  width: 392px;
+  padding: 24px;
+  border-radius: 24px;
+  font-family: Inter,sans-serif;
+}
+
+.auth_screen{
+  height: 100vh;
+  display: flex;
+  align-items: center;
+}
+
+.auth__header{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-bottom: 48px;
+}
+
+.auth__title{
+  font-size: 28px;
+}
+
+.auth_subtitle{
+  font-size:16px;
+  color: var(--light-gray);
+}

@@ -17,7 +17,7 @@ export default function AuthForm() {
             <form className={styles.auth__form} onSubmit={handleSubmit(onSubmit)}>
                 <div className="group">
                     <label className={styles.input__names}>Логин</label>
-                    <input className={clsx(styles.auth__input , errors.Login && styles.auth__input_err)} placeholder={'Введите логин'}
+                    <input type={"text"} className={clsx(styles.auth__input , errors.Login && styles.auth__input_err)} placeholder={'Введите логин'}
                            {...register("Login", {
                                required: "Заполните поле",
                                pattern: {
@@ -30,7 +30,7 @@ export default function AuthForm() {
 
                 <div className="group">
                     <label className={styles.input__names}>Пароль</label>
-                    <input className={clsx(styles.auth__input , errors.Password && styles.auth__input_err)} placeholder={'Введите пароль'}
+                    <input type={"password"} className={clsx(styles.auth__input , errors.Password && styles.auth__input_err)} placeholder={'Введите пароль'}
                            {...register("Password", {
                                required: "Заполните поле",
                            })} />
