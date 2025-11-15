@@ -1,11 +1,11 @@
 import {usePageTitle} from "../../context/PageTitleContext.jsx";
 import {useEffect} from "react";
 
-export default function Orders() {
+export default function Stock() {
     const {setTitle} = usePageTitle()
 
     useEffect(()=>{
-        setTitle('Заказы')
+        setTitle('Остатки на складе')
     },[])
 
     return(

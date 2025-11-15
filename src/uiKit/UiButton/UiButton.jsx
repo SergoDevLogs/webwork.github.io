@@ -1,6 +1,8 @@
 import styles from './UiButton.module.scss'
-export default function UiButton({onClick,type,children}){
+import clsx from "clsx";
+export default function UiButton({onClick,type,children,variant}){
+    const btnClassname = clsx(styles.ui__button,variant === 'purple' ? 'purple' : 'gray')
     return(
-        <button className={styles.ui__button} onClick={onClick} type={type}>{children}</button>
+        <button className={btnClassname} onClick={onClick} type={type}>{children}</button>
     )
 }

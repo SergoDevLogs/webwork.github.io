@@ -36,7 +36,7 @@ export default function AuthForm() {
                            })} />
                 </div>
                 {errors.Password && <span className={styles.text__err}>{errors.Password.message}</span>}
-                <UiButton type={'submit'}>Войти</UiButton>
+                <UiButton type={'submit'} variant={'purple'}>Войти</UiButton>
             </form>
         </>
     );
