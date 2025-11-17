@@ -61,6 +61,7 @@ input:focus{
     gap: 2rem;
     width: 100%;
     direction: ltr;
+    padding-bottom: 6px;
 
 }
 
