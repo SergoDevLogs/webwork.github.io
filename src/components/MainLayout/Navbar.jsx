@@ -5,7 +5,7 @@ export default function Navbar(){
     return (
         <>
             <div className={styles.wrap__navbar}>
-                <img src="/public/filter.svg" alt=""/>
+                <img src="/filter.svg" alt=""/>
                 <nav>
                         <Link className={''} to={'/orders'}>Мои заказы</Link>
                         <Link className={''} to={'/stock'}>Остатки на складе</Link>

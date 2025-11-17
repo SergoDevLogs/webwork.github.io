@@ -1,5 +1,5 @@
 import './App.css'
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import {BrowserRouter as Router, Routes, Route, Navigate} from 'react-router-dom';
 import {lazy, Suspense} from "react";
 
 const Auth = lazy(()=> import("./pages/Auth/Auth.jsx"));
@@ -14,6 +14,7 @@ function App() {
           <Router>
              <Suspense fallback={<div>Подожди ща</div>}>
                  <Routes>
+                     <Route path="/" element={<Navigate to="/orders" replace />} />
                      <Route element={<MainLayout />}>
                          <Route path={"/orders"} element={<Orders/>}></Route>
                          <Route path={"/stock"} element={<Stock/>}></Route>

@@ -1,0 +1,34 @@
+.card__wrap{
+  background: #5b5b5b69;
+  border-radius: 16px;
+  padding: 10px 20px;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.card__space{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.card__status{
+  color: #BA8F46;
+  font-size: 40px;
+  font-weight: bold;
+}
+
+.card__itemName{
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.card__date{
+  font-size: 24px;
+}
+
+.card__description{
+  font-size: 20px;
+  color: #C0C0C0;
+}
