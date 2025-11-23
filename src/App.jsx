@@ -1,18 +1,16 @@
 import './App.css'
 import {BrowserRouter as Router, Routes, Route, Navigate} from 'react-router-dom';
-import {lazy, Suspense} from "react";
 
-const Auth = lazy(()=> import("./pages/Auth/Auth.jsx"));
-const MainLayout = lazy(()=> import("./components/MainLayout/MainLayout.jsx"));
-const Stock = lazy(()=> import("./pages/Stock/Stock.jsx"));
-const Orders = lazy(()=> import("./pages/Orders/Orders.jsx"));
-const History = lazy(()=> import("./pages/History/History.jsx"));
+import Auth from "./pages/Auth";
+import MainLayout from "./components/MainLayout";
+import Stock from "./pages/Stock";
+import Orders from "./pages/Orders";
+import History from "./pages/History";
 
 function App() {
   return(
       <>
           <Router>
-             <Suspense fallback={<div>Подожди ща</div>}>
                  <Routes>
                      <Route path="/" element={<Navigate to="/orders" replace />} />
                      <Route element={<MainLayout />}>
@@ -23,7 +21,6 @@ function App() {
 
                      <Route path={"/auth"} element={<Auth/>}></Route>
                  </Routes>
-             </Suspense>
           </Router>
       </>
   )

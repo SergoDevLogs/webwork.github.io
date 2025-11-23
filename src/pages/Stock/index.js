@@ -1,1 +1,1 @@
-export {Stock} from './Stock.jsx'
+export {default} from './Stock.jsx'

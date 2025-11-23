@@ -1,0 +1,13 @@
+.stock__wrap{
+  display: flex;
+  gap: 20px;
+  width: 100%;
+}
+
+.stock__table{
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  max-height: 75vh;
+  overflow: auto;
+}

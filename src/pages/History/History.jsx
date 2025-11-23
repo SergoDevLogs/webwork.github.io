@@ -1,5 +1,6 @@
 import {usePageTitle} from "../../context/PageTitleContext.jsx";
 import {useEffect} from "react";
+import styles from './history.module.scss'
 
 export default function History() {
     const {setTitle} = usePageTitle();
@@ -10,7 +11,10 @@ export default function History() {
 
     return(
         <>
-
+            <div className={styles.stock__wrap}>
+                <div className={styles.history__table}>
+                </div>
+            </div>
         </>
     )
 }

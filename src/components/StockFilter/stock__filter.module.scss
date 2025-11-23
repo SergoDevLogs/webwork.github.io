@@ -1,0 +1,30 @@
+.filter{
+  display: flex;
+  flex-direction: column;
+  background: #4C4C4C;
+  border-radius: 16px;
+  overflow: hidden;
+  font-size: 22px;
+  font-weight: 600;
+}
+
+.filter__title{
+  background: #6F6B9D;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 16px;
+  display: flex;
+  justify-content: center;
+}
+
+.filter__el{
+  padding: 8px 50px;
+  border-radius: 16px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+}
+
+.filter__el_active{
+  background: #ffffff38;
+}

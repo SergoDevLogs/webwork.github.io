@@ -1,0 +1,17 @@
+.card{
+  display: grid;
+  width: 100%;
+  grid-template-columns: 1fr 2fr 1fr;
+  background: #383838;
+  border:1px solid #888888;
+}
+
+.card__el{
+  border-right: 2px solid #888888;
+  padding: 10px 0;
+  width: 100%;
+  display: flex;
+  justify-content: center ;
+  font-weight: 600;
+  font-size: 24px;
+}
